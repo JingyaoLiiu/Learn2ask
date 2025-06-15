@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python3 -m vllm.entrypoints.openai.api_server --model /public/home/ldk/model_cards/Qwen3-14B --port 8000 --dtype bfloat16 --tensor-parallel-size 1 --swap-space 8 --max-model-len 8192
